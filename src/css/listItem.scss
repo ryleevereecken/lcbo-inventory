@@ -1,0 +1,20 @@
+.single-item .image {
+    background-size: cover;
+    height: 240px;
+    width: 180px;
+    margin: 0 auto;
+    transition: 0.4s ease-in-out all;
+}
+.single-item .image:hover {
+    transform: rotate( 3deg ) scale(1.1)
+}
+.single-item .title, .single-item .desc {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    text-align: center;
+    position: relative;
+    z-index: 999999;
+}
+.single-item {
+    border-bottom: 2px solid #016FB9;
+    padding: 20px 0;
+}
