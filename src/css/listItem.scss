@@ -15,6 +15,22 @@
     z-index: 999999;
 }
 .single-item {
-    border-bottom: 2px solid #016FB9;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     padding: 20px 0;
+}
+.single-item .alcohol-content {
+    display: inline-block;
+    text-align: center;
+    margin-left: 5px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+.single-item .title {
+    display: inline-block;
+}
+.single-item .title-wrapper {
+    text-align: center;
 }

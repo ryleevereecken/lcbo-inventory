@@ -1,0 +1,11 @@
+.navigation {
+    margin-top: 15px;
+    text-align: center
+}
+.navigation a {
+    margin: 0 5px;
+    transition: 0.5s all ease-in-out;
+}
+.navigation a:hover {
+    color: blueviolet;
+}

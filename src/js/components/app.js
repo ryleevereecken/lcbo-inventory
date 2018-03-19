@@ -3,6 +3,7 @@ import React from 'react'
 import Header from './header'
 import ListContainer from '../containers/listContainer.js'
 import { getPage } from '../action'
+import Navigation from './navigation'
 
 class App extends React.Component {
     componentDidMount() {
@@ -21,6 +22,7 @@ class App extends React.Component {
             <div className="main">
                 <Header title='LCBO Inventory' icon='beer'/>
                 <ListContainer />
+                <Navigation />
             </div>
         )
     }   
