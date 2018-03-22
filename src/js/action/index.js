@@ -1,11 +1,22 @@
 import React from 'react'
 
 export const ActionTypes = {
-    GET_PAGE : 'GET_PAGE'
+    REQUEST_PAGE : 'REQUEST_PAGE',
+    RECEIVE_PAGE: 'RECEIVE_PAGE'
 }
 
-export const getPage = ( page ) => { 
+export const requestPage = ( page ) => { 
     return {
-        type: ActionTypes.GET_PAGE, page
+        type: ActionTypes.REQUEST_PAGE, page,
+        meta: {
+            endpoint,
+            resultKey
+        }
     }
 }
+export const recievePage = ( page, results ) => { 
+    return {
+        type: ActionTypes.RECEIVE_PAGE, page, results
+    }
+}
+
